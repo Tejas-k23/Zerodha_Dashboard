@@ -6,7 +6,7 @@ import axios from "axios";
 const Holdings = () => {
 const [allholding,setAllholding]=useState([]);
 useEffect(()=>{
-  axios.get("http://localhost:8080/holdingdata").then((res)=>{
+  axios.get("https://zerodha-backend-tvy2.onrender.com/holdingdata").then((res)=>{
     console.log(res.data);
     setAllholding(res.data);
   })
